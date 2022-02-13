@@ -1,11 +1,3 @@
-:root {
-  --primaryColor: #ff523b;
-  --secondaryColor: #555;
-  --colorWhite: #fff;
-  --colorLightGrey: #8a8a8a;
-  --colorGradient: #ffd6d6;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +30,11 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: #555;
 }
 
 p {
-  color: var(--secondaryColor);
+  color: #555;
 }
 
 .container {
@@ -77,8 +69,8 @@ p {
 
 .btn {
   display: inline-block;
-  background: var(--primaryColor);
-  color: var(--colorvar(--colorWhite));
+  background: #ff523b;
+  color: #fff;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
@@ -90,10 +82,7 @@ p {
 }
 
 .header {
-  background: radial-gradient(
-    var(--colorvar(--colorWhite)),
-    var(--colorGradient)
-  );
+  background: radial-gradient(#fff, #ffd6d6);
 }
 
 .header .row {
@@ -140,12 +129,12 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  color: var(--secondaryColor);
+  color: #555;
 }
 
 .title::after {
   content: "";
-  background: var(--primaryColor);
+  background: #ff523b;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -156,7 +145,7 @@ p {
 }
 
 h4 {
-  color: var(--secondaryColor);
+  color: #555;
   font-weight: normal;
 }
 
@@ -165,7 +154,7 @@ h4 {
 }
 
 .ratings .fas {
-  color: var(--primaryColor);
+  color: #ff523b;
 }
 
 .col-4:hover {
@@ -174,10 +163,7 @@ h4 {
 }
 /* -------------------Offer-------------- */
 .offer {
-  background: radial-gradient(
-    var(--colorvar(--colorWhite)),
-    var(--colorGradient)
-  );
+  background: radial-gradient(#fff, #ffd6d6);
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -187,7 +173,7 @@ h4 {
 }
 
 small {
-  color: var(--secondaryColor);
+  color: #555;
 }
 
 /* ---------------testimonial---------------- */
@@ -216,7 +202,7 @@ small {
 
 .fa-quote-left {
   font-size: 34px;
-  color: var(--primaryColor);
+  color: #ff523b;
 }
 
 .col-3 p {
@@ -227,7 +213,7 @@ small {
 
 .testimonial .col-3 h3 {
   font-weight: 600;
-  color: var(--secondaryColor);
+  color: #555;
   font-size: 16px;
 }
 
@@ -252,17 +238,17 @@ small {
 
 .footer {
   background: #000;
-  color: var(--colorLightGrey);
+  color: #8a8a8a;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 
 .footer p {
-  color: var(--colorLightGrey);
+  color: #8a8a8a;
 }
 
 .footer h3 {
-  color: var(--colorvar(--colorWhite));
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -323,7 +309,6 @@ ul {
   display: none;
   cursor: pointer;
 }
-
 /* All Products */
 .row-2 {
   justify-content: space-between;
@@ -331,7 +316,7 @@ ul {
 }
 
 select {
-  border: 1px solid var(--primaryColor);
+  border: 1px solid #ff523b;
   padding: 5px;
 }
 
@@ -347,7 +332,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid var(--primaryColor);
+  border: 1px solid #ff523b;
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -357,6 +342,201 @@ select:focus {
 }
 
 .page-btn span:hover {
-  color: var(--colorWhite);
-  background: var(--primaryColor);
+  color: white;
+  background: #ff523b;
+}
+
+/* Single product Details */
+
+.singleProduct {
+  margin-top: 80px;
+}
+
+.singleProduct .col-2 img {
+  padding: 0;
+}
+
+.singleProduct .col-2 {
+  padding: 20px;
+}
+
+.singleProduct h4 {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 22px;
+}
+.singleProduct select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.singleProduct input {
+  width: 50px;
+  height: 40px;
+  padding-left: 18px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #ff523b;
+}
+
+input:focus {
+  outline: none;
+}
+
+.singleProduct .fas {
+  color: #ff523b;
+  margin-left: 10px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+/* <!-- Cart Items Details --> */
+
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #ff523b;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #ff523b;
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 400px;
+}
+
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+/* account-page */
+
+.account-page {
+  padding: 50px 0;
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.form-container {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+}
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form input:focus {
+  border: 1px solid #ff523b;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+#loginform {
+  left: -300px;
+}
+
+#registerform {
+  left: 0;
+}
+
+form a {
+  font-size: 12px;
+}
+
+#indicator {
+  width: 100px;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  margin-top: 8px;
 }
